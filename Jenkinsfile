@@ -1,31 +1,93 @@
 pipeline {
     agent any
-    
-    tools {nodejs "Node"}
-    
+ 
+    tools {nodejs "node"}
+ 
     stages {
+ 
         stage('Cypress Parallel Test Suite') {
-            steps {
-                git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
-                script {
-                    def agents = ["Agent2_1", "Agent2_2", "Agent2_3", "Agent2_4", "Agent2_5"]
-                    def parallelStages = [:]
-                    for (int i = 0; i < agents.size(); i++) {
-                        def agentLabel = agents[i]
-                        parallelStages["Slave ${i + 1}"] = {
-                            agent {
-                                label agentLabel
-                            }
-                            steps {
-                                bat 'npm install'
-                                // Consider removing 'npm update' unless necessary
-                                bat 'npx cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
-                            }
-                        }
+            parallel {
+                stage('Slave 1') {
+                    agent {
+                        label "Agent2_1"
                     }
-                    parallel parallelStages
+                    steps {
+                        git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
+                    
+                    }
                 }
+
+                    stage('Slave 2') {
+                    agent {
+                        label "Agent2_2"
+                    }
+                    steps {
+                        git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
+                    
+                    }
+                }
+
+                    stage('Slave 3') {
+                    agent {
+                        label "Agent2_3"
+                    }
+                    steps {
+                        git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
+                    
+                    }
+                }
+
+                    stage('Slave 4') {
+                    agent {
+                        label "Agent2_4"
+                    }
+                    steps {
+                        git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
+                    
+                    }
+                }
+
+                    stage('Slave 5') {
+                    agent {
+                        label "Agent2_5"
+                    }
+                    steps {
+                        git url: 'https://github.com/Carlos7678/Paralelo_pipeline.git'
+                        bat 'npm install'
+                        bat 'npm update'                       
+                        bat 'npx cypress run cypress run --record --key 33589a7b-9669-4887-b876-3a368e060a29 --parallel'
+                    
+                    }
+                }
+
+
+
+
+
+                
+ 
+    
+ 
+               
+  
+                  
             }
+ 
+             
         }
+ 
     }
+            
 }
