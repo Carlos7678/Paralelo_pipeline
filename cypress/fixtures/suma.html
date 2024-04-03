@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Suma</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    input[type="number"] {
+        padding: 8px;
+        width: 100px;
+        margin: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    #resultado {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Calculadora de Suma</h2>
+
+<input type="number" id="numero1" placeholder="Ingrese el primer número">
+<input type="number" id="numero2" placeholder="Ingrese el segundo número">
+
+<button onclick="sumar()">Sumar</button>
+
+<div id="operacion">a + b</div>
+<div id="resultado"></div>
+
+<script>
+function sumar() {
+    var num1 = parseFloat(document.getElementById('numero1').value);
+    var num2 = parseFloat(document.getElementById('numero2').value);
+    var operacion=num1+num2;
+    var resultado = operacion;
+    document.getElementById('operacion').innerText = num1 + " + " + num2 + " = ";
+    document.getElementById('resultado').innerText = resultado;
+}
+</script>
+
+</body>
+</html>
