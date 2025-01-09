@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Setup Agent') {
             agent {
-                label 'master' // Cambia el label según corresponda a tu configuración
+                label 'main' // Cambia el label según corresponda a tu configuración
             }
             steps {
                 script {
