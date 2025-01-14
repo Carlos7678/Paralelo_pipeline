@@ -12,7 +12,8 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 1...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
+                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])                            
+                            bat 'npm run'
                             bat 'npm install'
                             bat 'npm run cy:runAgent1'
                         }
