@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
-    "cy:parallel" : "cypress-parallel -d cypress/e2e/seccion_1/ -t 5 -s cy:run -m false"
+    "cy:parallel" : "cypress-parallel -d cypress/e2e/seccion_1/ -t 5 -s cy:run -m false",
+    "cy:runAgent1" : "cypress run --spec cypress/e2e/seccion_1/1/*.cy.js",
+    "cy:runAgent2" : "cypress run --spec cypress/e2e/seccion_1/2/*.cy.js",
+    "cy:runAgent3" : "cypress run --spec cypress/e2e/seccion_1/3/*.cy.js",
+    "cy:runAgent4" : "cypress run --spec cypress/e2e/seccion_1/4/*.cy.js",
+    "cy:runAgent5" : "cypress run --spec cypress/e2e/seccion_1/5/*.cy.js"
   },
   "author": "",
   "license": "ISC",
