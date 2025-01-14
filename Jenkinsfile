@@ -12,8 +12,7 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 1...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])                            
-                            bat 'npm run'
+                            checkout scmGit(branches: [[name: 'paralelizarNoOrchestrator']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])                            
                             bat 'npm install'
                             bat 'npm run cy:runAgent1'
                         }
@@ -24,7 +23,7 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 2...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
+                            checkout scmGit(branches: [[name: 'paralelizarNoOrchestrator']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
                             bat 'npm install'
                             bat 'npm run cy:runAgent2'
                         }
@@ -35,7 +34,7 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 3...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
+                            checkout scmGit(branches: [[name: 'paralelizarNoOrchestrator']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
                             bat 'npm install'
                             bat 'npm run cy:runAgent3'
                         }
@@ -46,7 +45,7 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 4...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
+                            checkout scmGit(branches: [[name: 'paralelizarNoOrchestrator']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
                             bat 'npm install'
                             bat 'npm run cy:runAgent4'
                         }
@@ -57,7 +56,7 @@ pipeline {
                     steps {
                         script {
                             echo 'Configurando y ejecutando pruebas en Slave 5...'
-                            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
+                            checkout scmGit(branches: [[name: 'paralelizarNoOrchestrator']], extensions: [], userRemoteConfigs: [[credentialsId: '6a33cade-aa5d-4f7d-ad26-e5b454b84d1d', url: 'https://github.com/Carlos7678/Paralelo_pipeline.git']])
                             bat 'npm install'
                             bat 'npm run cy:runAgent5'
                         }
