@@ -5,12 +5,16 @@ describe("Bienvenidos al curso de Cypress sección 1", () => {
 
   it("Mi primer test-> Hola mundo", () => {
     cy.log("Hola mundo");
+    cy.log("Hola mundo");
     
   });
 
   it("Segundo test -> campo name", () => {
     cy.visit("https://demoqa.com/text-box");
     cy.get("#userName").type("Carlos");
+    cy.get("#userName").type("Carlos");
+    cy.get("#userName").type("Carlos");
+    
     
   });
   
