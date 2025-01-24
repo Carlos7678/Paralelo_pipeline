@@ -1,24 +1,24 @@
 
 > cypress_curso_2024@1.0.0 cy:parallel
-> cypress-parallel -d cypress/e2e/seccion_1/ -t 5 -s cy:run -m false --no-color
+> cypress-parallel -d cypress/e2e/seccion_1/*/*.cy.js -t 5 -s cy:run -m false -w C:/Users/usuario/Desktop/Paralelo_pipeline/cypress/parallel-weights.json --no-color
 
-DEPRECATED: using path is deprecated and will be removed, switch to glob pattern
+Using pattern cypress/e2e/seccion_1/*/*.cy.js to find test suites
 33 test suite(s) found.
 
 > cypress_curso_2024@1.0.0 cy:run
-> cypress run --spec cypress\\e2e\\seccion_1\\Hola_mundo copy 2.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 63.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 66.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 55.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 59.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 72.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
+> cypress run --spec cypress/e2e/seccion_1/1/Hola_mundo copy 2.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 10.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 9.cy.js,cypress/e2e/seccion_1/3/Hola_mundo copy 66.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 56.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 61.cy.js,cypress/e2e/seccion_1/5/Hola_mundo.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
 
 
 > cypress_curso_2024@1.0.0 cy:run
-> cypress run --spec cypress\\e2e\\seccion_1\\Hola_mundo copy 51.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 53.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo 70.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 10.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 58.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 64.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 9.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
+> cypress run --spec cypress/e2e/seccion_1/1/Hola_mundo 70.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 50.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 8.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 52.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 55.cy.js,cypress/e2e/seccion_1/5/Hola_mundo copy 67.cy.js,cypress/e2e/seccion_1/5/Hola_mundo copy.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
 
 
 > cypress_curso_2024@1.0.0 cy:run
-> cypress run --spec cypress\\e2e\\seccion_1\\Hola_mundo copy 50.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 57.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo 69.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 3.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 56.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 65.cy.js,cypress\\e2e\\seccion_1\\Hola_mundo copy 8.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
+> cypress run --spec cypress/e2e/seccion_1/1/Hola_mundo 69.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 51.cy.js,cypress/e2e/seccion_1/2/Hola_mundo copy 7.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 53.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 54.cy.js,cypress/e2e/seccion_1/5/Hola_mundo copy 68.cy.js,cypress/e2e/seccion_1/5/Hola_mundo copy 72.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
 
 
 
-DevTools listening on ws://127.0.0.1:62753/devtools/browser/8a4c1b95-679c-46ab-995a-71226a1dce50
+DevTools listening on ws://127.0.0.1:57123/devtools/browser/39b4d943-898b-446a-a874-cf52d5353fd5
 
 ====================================================================================================
 
@@ -28,26 +28,26 @@ DevTools listening on ws://127.0.0.1:62753/devtools/browser/8a4c1b95-679c-46ab-9
   │ Cypress:        13.7.1                                                                         │
   │ Browser:        Electron 118 (headless)                                                        │
   │ Node Version:   v22.11.0 (C:\Program Files\nodejs\node.exe)                                    │
-  │ Specs:          7 found (Hola_mundo copy 2.cy.js, Hola_mundo copy 63.cy.js, Hola_mundo copy 66 │
-  │                 .cy.js, Hola_mundo copy 55.cy.js, Hola_mundo copy 59.cy.js, Hola_mundo copy 72 │
-  │                 .cy.js, Hola_mundo copy.cy.js)                                                 │
-  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\Hola_mundo co │
-  │                 py 2.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\H │
-  │                 ola_mundo copy 63.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2 │
-  │                 e\seccion_1\Hola_mundo copy 66.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeli │
-  │                 ne\cypress\e2e\seccion_1\Hola_mundo copy 55.cy.js, C:\Users\usuario\Desktop\Pa │
-  │                 ralelo_pipeline\cypress\e2e\seccion_1\Hola_mundo copy 59.cy.js, C:\Users\usuar │
-  │                 io\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\Hola_mundo copy 72.cy.js, C │
-  │                 :\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\Hola_mundo cop │
-  │                 y.cy.js                                                                        │
+  │ Specs:          7 found (1/Hola_mundo copy 2.cy.js, 2/Hola_mundo copy 10.cy.js, 2/Hola_mundo c │
+  │                 opy 9.cy.js, 3/Hola_mundo copy 66.cy.js, 4/Hola_mundo copy 56.cy.js, 4/Hola_mu │
+  │                 ndo copy 61.cy.js, 5/Hola_mundo.cy.js)                                         │
+  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\1\Hola_mundo  │
+  │                 copy 2.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1 │
+  │                 \2\Hola_mundo copy 10.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypres │
+  │                 s\e2e\seccion_1\2\Hola_mundo copy 9.cy.js, C:\Users\usuario\Desktop\Paralelo_p │
+  │                 ipeline\cypress\e2e\seccion_1\3\Hola_mundo copy 66.cy.js, C:\Users\usuario\Des │
+  │                 ktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy 56.cy.js, C:\Us │
+  │                 ers\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy  │
+  │                 61.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\5\H │
+  │                 ola_mundo.cy.js                                                                │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Hola_mundo copy 2.cy.js                                                         (1 of 7)
-  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\Hola_mundo copy 2.cy.js) (28ms)
-  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\Hola_mundo copy 2.cy.js) (20361ms)
+  Running:  1/Hola_mundo copy 2.cy.js                                                       (1 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo copy 2.cy.js) (46ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo copy 2.cy.js) (4240ms)
 
   (Results)
 
@@ -59,16 +59,16 @@ DevTools listening on ws://127.0.0.1:62753/devtools/browser/8a4c1b95-679c-46ab-9
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     22 seconds                                                                       │
-  │ Spec Ran:     Hola_mundo copy 2.cy.js                                                          │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo copy 2.cy.js                                                        │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Hola_mundo copy 63.cy.js                                                        (2 of 7)
-  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\Hola_mundo copy 63.cy.js) (401ms)
-  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\Hola_mundo copy 63.cy.js) (20123ms)
+  Running:  2/Hola_mundo copy 10.cy.js                                                      (2 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 10.cy.js) (381ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 10.cy.js) (3518ms)
 
   (Results)
 
@@ -80,16 +80,16 @@ DevTools listening on ws://127.0.0.1:62753/devtools/browser/8a4c1b95-679c-46ab-9
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     21 seconds                                                                       │
-  │ Spec Ran:     Hola_mundo copy 63.cy.js                                                         │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 10.cy.js                                                       │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Hola_mundo copy 66.cy.js                                                        (3 of 7)
-  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\Hola_mundo copy 66.cy.js) (407ms)
-  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\Hola_mundo copy 66.cy.js) (20151ms)
+  Running:  2/Hola_mundo copy 9.cy.js                                                       (3 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 9.cy.js) (388ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 9.cy.js) (3611ms)
 
   (Results)
 
@@ -101,12 +101,936 @@ DevTools listening on ws://127.0.0.1:62753/devtools/browser/8a4c1b95-679c-46ab-9
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     22 seconds                                                                       │
-  │ Spec Ran:     Hola_mundo copy 66.cy.js                                                         │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 9.cy.js                                                        │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Hola_mundo copy 55.cy.js                                                        (4 of 7)
-  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\Hola_mundo copy 55.cy.js) (379ms)
+  Running:  3/Hola_mundo copy 66.cy.js                                                      (4 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\3\Hola_mundo copy 66.cy.js) (396ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\3\Hola_mundo copy 66.cy.js) (2642ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     3/Hola_mundo copy 66.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 56.cy.js                                                      (5 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 56.cy.js) (407ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 56.cy.js) (3669ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 56.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 61.cy.js                                                      (6 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 61.cy.js) (384ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 61.cy.js) (2935ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 61.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  5/Hola_mundo.cy.js                                                              (7 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\5\Hola_mundo.cy.js) (382ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\5\Hola_mundo.cy.js) (2850ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     5/Hola_mundo.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  1/Hola_mundo copy 2.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 10.cy.js               00:05        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 9.cy.js                00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  3/Hola_mundo copy 66.cy.js               00:04        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 56.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 61.cy.js               00:05        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  5/Hola_mundo.cy.js                       00:04        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:40       14       14        -        -        -  
+
+
+
+
+> cypress_curso_2024@1.0.0 cy:run
+> cypress run --spec cypress/e2e/seccion_1/1/Hola_mundo copy 3.cy.js,cypress/e2e/seccion_1/1/Hola_mundo copy 6.cy.js,cypress/e2e/seccion_1/3/Hola_mundo copy 62.cy.js,cypress/e2e/seccion_1/3/Hola_mundo copy 65.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 57.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 60.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
+
+
+> cypress_curso_2024@1.0.0 cy:run
+> cypress run --spec cypress/e2e/seccion_1/1/Hola_mundo copy 4.cy.js,cypress/e2e/seccion_1/1/Hola_mundo copy 5.cy.js,cypress/e2e/seccion_1/3/Hola_mundo copy 63.cy.js,cypress/e2e/seccion_1/3/Hola_mundo copy 64.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 58.cy.js,cypress/e2e/seccion_1/4/Hola_mundo copy 59.cy.js --reporter cypress-multi-reporters --reporter-options configFile=C:\Users\usuario\Desktop\Paralelo_pipeline\multi-reporter-config.json
+
+
+DevTools listening on ws://127.0.0.1:58455/devtools/browser/7a43fd72-35e7-4a55-9d42-333fd8b6db6c
+
+DevTools listening on ws://127.0.0.1:58456/devtools/browser/93c925d2-d2fa-4f35-b4df-3e728f3033fe
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.7.1                                                                         │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v22.11.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          7 found (1/Hola_mundo 69.cy.js, 2/Hola_mundo copy 51.cy.js, 2/Hola_mundo copy  │
+  │                 7.cy.js, 4/Hola_mundo copy 53.cy.js, 4/Hola_mundo copy 54.cy.js, 5/Hola_mundo  │
+  │                 copy 68.cy.js, 5/Hola_mundo copy 72.cy.js)                                     │
+  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\1\Hola_mundo  │
+  │                 69.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\2\H │
+  │                 ola_mundo copy 51.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2 │
+  │                 e\seccion_1\2\Hola_mundo copy 7.cy.js, C:\Users\usuario\Desktop\Paralelo_pipel │
+  │                 ine\cypress\e2e\seccion_1\4\Hola_mundo copy 53.cy.js, C:\Users\usuario\Desktop │
+  │                 \Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy 54.cy.js, C:\Users\ │
+  │                 usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\5\Hola_mundo copy 68.c │
+  │                 y.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\5\Hola_ │
+  │                 mundo copy 72.cy.js                                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo 69.cy.js                                                           (1 of 7)
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.7.1                                                                         │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v22.11.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          7 found (1/Hola_mundo 70.cy.js, 2/Hola_mundo copy 50.cy.js, 2/Hola_mundo copy  │
+  │                 8.cy.js, 4/Hola_mundo copy 52.cy.js, 4/Hola_mundo copy 55.cy.js, 5/Hola_mundo  │
+  │                 copy 67.cy.js, 5/Hola_mundo copy.cy.js)                                        │
+  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\1\Hola_mundo  │
+  │                 70.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\2\H │
+  │                 ola_mundo copy 50.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2 │
+  │                 e\seccion_1\2\Hola_mundo copy 8.cy.js, C:\Users\usuario\Desktop\Paralelo_pipel │
+  │                 ine\cypress\e2e\seccion_1\4\Hola_mundo copy 52.cy.js, C:\Users\usuario\Desktop │
+  │                 \Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy 55.cy.js, C:\Users\ │
+  │                 usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\5\Hola_mundo copy 67.c │
+  │                 y.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\5\Hola_ │
+  │                 mundo copy.cy.js                                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo 70.cy.js                                                           (1 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo 69.cy.js) (46ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo 70.cy.js) (48ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo 70.cy.js) (4212ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo 69.cy.js) (4304ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo 70.cy.js                                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo 69.cy.js                                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2/Hola_mundo copy 50.cy.js                                                      (2 of 7)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2/Hola_mundo copy 51.cy.js                                                      (2 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 51.cy.js) (410ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 50.cy.js) (428ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 51.cy.js) (2837ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 51.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2/Hola_mundo copy 7.cy.js                                                       (3 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 50.cy.js) (3166ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 50.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  2/Hola_mundo copy 8.cy.js                                                       (3 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 7.cy.js) (422ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\2\Hola_mundo copy 8.cy.js) (414ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 7.cy.js) (3269ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 7.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 53.cy.js                                                      (4 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\2\Hola_mundo copy 8.cy.js) (4268ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     2/Hola_mundo copy 8.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 52.cy.js                                                      (4 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 53.cy.js) (403ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 52.cy.js) (441ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 53.cy.js) (3280ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 53.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 54.cy.js                                                      (5 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 52.cy.js) (4443ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 52.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 55.cy.js                                                      (5 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 54.cy.js) (423ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 55.cy.js) (427ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 54.cy.js) (4168ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 54.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  5/Hola_mundo copy 68.cy.js                                                      (6 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 55.cy.js) (4947ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 55.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  5/Hola_mundo copy 67.cy.js                                                      (6 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\5\Hola_mundo copy 68.cy.js) (566ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\5\Hola_mundo copy 67.cy.js) (438ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\5\Hola_mundo copy 68.cy.js) (3816ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     5/Hola_mundo copy 68.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  5/Hola_mundo copy 72.cy.js                                                      (7 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\5\Hola_mundo copy 67.cy.js) (4093ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     5/Hola_mundo copy 67.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  5/Hola_mundo copy.cy.js                                                         (7 of 7)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\5\Hola_mundo copy 72.cy.js) (438ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\5\Hola_mundo copy.cy.js) (432ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\5\Hola_mundo copy 72.cy.js) (3290ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     5/Hola_mundo copy 72.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  1/Hola_mundo 69.cy.js                    00:08        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 51.cy.js               00:05        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 7.cy.js                00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 53.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 54.cy.js               00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  5/Hola_mundo copy 68.cy.js               00:08        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  5/Hola_mundo copy 72.cy.js               00:06        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:49       14       14        -        -        -  
+
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\5\Hola_mundo copy.cy.js) (3241ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     5/Hola_mundo copy.cy.js                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  1/Hola_mundo 70.cy.js                    00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 50.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  2/Hola_mundo copy 8.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 52.cy.js               00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 55.cy.js               00:08        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  5/Hola_mundo copy 67.cy.js               00:08        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  5/Hola_mundo copy.cy.js                  00:06        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:51       14       14        -        -        -  
+
+
+
+
+DevTools listening on ws://127.0.0.1:60997/devtools/browser/0ae93226-6759-4130-981c-7427242f14e9
+
+DevTools listening on ws://127.0.0.1:60996/devtools/browser/2bebe95b-fd46-4c8b-8602-73d48531c462
+
+
+====================================================================================================
+
+  (Run Starting)
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.7.1                                                                         │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v22.11.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          6 found (1/Hola_mundo copy 3.cy.js, 1/Hola_mundo copy 6.cy.js, 3/Hola_mundo co │
+  │                 py 62.cy.js, 3/Hola_mundo copy 65.cy.js, 4/Hola_mundo copy 57.cy.js, 4/Hola_mu │
+  │                 ndo copy 60.cy.js)                                                             │
+  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\1\Hola_mundo  │
+  │                 copy 3.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1 │
+  │                 \1\Hola_mundo copy 6.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress │
+  │                 \e2e\seccion_1\3\Hola_mundo copy 62.cy.js, C:\Users\usuario\Desktop\Paralelo_p │
+  │                 ipeline\cypress\e2e\seccion_1\3\Hola_mundo copy 65.cy.js, C:\Users\usuario\Des │
+  │                 ktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy 57.cy.js, C:\Us │
+  │                 ers\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy  │
+  │                 60.cy.js                                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo copy 3.cy.js                                                       (1 of 6)
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.7.1                                                                         │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v22.11.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          6 found (1/Hola_mundo copy 4.cy.js, 1/Hola_mundo copy 5.cy.js, 3/Hola_mundo co │
+  │                 py 63.cy.js, 3/Hola_mundo copy 64.cy.js, 4/Hola_mundo copy 58.cy.js, 4/Hola_mu │
+  │                 ndo copy 59.cy.js)                                                             │
+  │ Searched:       C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\1\Hola_mundo  │
+  │                 copy 4.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1 │
+  │                 \1\Hola_mundo copy 5.cy.js, C:\Users\usuario\Desktop\Paralelo_pipeline\cypress │
+  │                 \e2e\seccion_1\3\Hola_mundo copy 63.cy.js, C:\Users\usuario\Desktop\Paralelo_p │
+  │                 ipeline\cypress\e2e\seccion_1\3\Hola_mundo copy 64.cy.js, C:\Users\usuario\Des │
+  │                 ktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy 58.cy.js, C:\Us │
+  │                 ers\usuario\Desktop\Paralelo_pipeline\cypress\e2e\seccion_1\4\Hola_mundo copy  │
+  │                 59.cy.js                                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo copy 4.cy.js                                                       (1 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo copy 4.cy.js) (36ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo copy 3.cy.js) (51ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo copy 3.cy.js) (4155ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo copy 4.cy.js) (4181ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo copy 3.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo copy 6.cy.js                                                       (2 of 6)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo copy 4.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  1/Hola_mundo copy 5.cy.js                                                       (2 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo copy 6.cy.js) (389ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\1\Hola_mundo copy 5.cy.js) (425ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo copy 6.cy.js) (3917ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\1\Hola_mundo copy 5.cy.js) (3782ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo copy 6.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     1/Hola_mundo copy 5.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  3/Hola_mundo copy 62.cy.js                                                      (3 of 6)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  3/Hola_mundo copy 63.cy.js                                                      (3 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\3\Hola_mundo copy 63.cy.js) (481ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\3\Hola_mundo copy 62.cy.js) (508ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\3\Hola_mundo copy 63.cy.js) (3716ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     3/Hola_mundo copy 63.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  3/Hola_mundo copy 64.cy.js                                                      (4 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\3\Hola_mundo copy 62.cy.js) (4028ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     3/Hola_mundo copy 62.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  3/Hola_mundo copy 65.cy.js                                                      (4 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\3\Hola_mundo copy 64.cy.js) (417ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\3\Hola_mundo copy 65.cy.js) (410ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\3\Hola_mundo copy 64.cy.js) (3709ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     3/Hola_mundo copy 64.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 58.cy.js                                                      (5 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\3\Hola_mundo copy 65.cy.js) (3910ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     3/Hola_mundo copy 65.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 57.cy.js                                                      (5 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 58.cy.js) (439ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 57.cy.js) (451ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 58.cy.js) (3816ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 58.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 59.cy.js                                                      (6 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 57.cy.js) (3517ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 57.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  4/Hola_mundo copy 60.cy.js                                                      (6 of 6)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 59.cy.js) (404ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Mi primer test-> Hola mundo (cypress\e2e\seccion_1\4\Hola_mundo copy 60.cy.js) (407ms)
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 59.cy.js) (3185ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 59.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  1/Hola_mundo copy 4.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  1/Hola_mundo copy 5.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  3/Hola_mundo copy 63.cy.js               00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  3/Hola_mundo copy 64.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 58.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 59.cy.js               00:05        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:41       12       12        -        -        -  
+
+  √ Bienvenidos al curso de Cypress sección 1 - Segundo test -> campo name (cypress\e2e\seccion_1\4\Hola_mundo copy 60.cy.js) (3999ms)
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     4/Hola_mundo copy 60.cy.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  1/Hola_mundo copy 3.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  1/Hola_mundo copy 6.cy.js                00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  3/Hola_mundo copy 62.cy.js               00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  3/Hola_mundo copy 65.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 57.cy.js               00:06        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  4/Hola_mundo copy 60.cy.js               00:06        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:42       12       12        -        -        -  
+
+┌───────────────────────────────────────────────────┬──────────┬──────────┬──────────┬──────────┬──────────┐
+│ Spec                                              │ Time     │ Tests    │ Passing  │ Failing  │ Pending  │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo 69.cy.js       │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo 70.cy.js       │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo copy 2.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo copy 3.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo copy 4.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo copy 5.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\1\Hola_mundo copy 6.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 10.cy.js  │ 6s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 50.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 51.cy.js  │ 6s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 7.cy.js   │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 8.cy.js   │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\2\Hola_mundo copy 9.cy.js   │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\3\Hola_mundo copy 62.cy.js  │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\3\Hola_mundo copy 63.cy.js  │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\3\Hola_mundo copy 64.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\3\Hola_mundo copy 65.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\3\Hola_mundo copy 66.cy.js  │ 5s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 52.cy.js  │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 53.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 54.cy.js  │ 8s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 55.cy.js  │ 9s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 56.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 57.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 58.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 59.cy.js  │ 6s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 60.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\4\Hola_mundo copy 61.cy.js  │ 6s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\5\Hola_mundo copy 67.cy.js  │ 9s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\5\Hola_mundo copy 68.cy.js  │ 9s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\5\Hola_mundo copy 72.cy.js  │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\5\Hola_mundo copy.cy.js     │ 7s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ cypress\e2e\seccion_1\5\Hola_mundo.cy.js          │ 5s       │ 2        │ 2        │ 0        │ 0        │
+├───────────────────────────────────────────────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+│ Results                                           │ 3m 45s   │ 66       │ 66       │ 0        │ 0        │
+└───────────────────────────────────────────────────┴──────────┴──────────┴──────────┴──────────┴──────────┘
+Total run time: 224.845s, executed in: 278.703, saved -53.858 (~-24%)
+Weights file generated.

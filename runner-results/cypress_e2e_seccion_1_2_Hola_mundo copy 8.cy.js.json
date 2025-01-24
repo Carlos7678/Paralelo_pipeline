@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 2,
+  "pending": 0,
+  "failures": 0,
+  "start": "2025-01-16T09:35:24.338Z",
+  "duration": 7182,
+  "file": "cypress\\e2e\\seccion_1\\2\\Hola_mundo copy 8.cy.js"
+}
